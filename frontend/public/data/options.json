@@ -1,0 +1,1142 @@
+[
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "갈월동",
+    "areaMin": 12.92,
+    "areaMax": 158.35,
+    "floorMin": -1,
+    "floorMax": 24
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "남영동",
+    "areaMin": 50.05,
+    "areaMax": 128.53,
+    "floorMin": 3,
+    "floorMax": 6
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "도원동",
+    "areaMin": 28.92,
+    "areaMax": 114.99,
+    "floorMin": 1,
+    "floorMax": 22
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "동자동",
+    "areaMin": 13.22,
+    "areaMax": 244.69,
+    "floorMin": -1,
+    "floorMax": 35
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "문배동",
+    "areaMin": 11.91,
+    "areaMax": 126.3,
+    "floorMin": -1,
+    "floorMax": 32
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "산천동",
+    "areaMin": 18.83,
+    "areaMax": 114.48,
+    "floorMin": -1,
+    "floorMax": 20
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "서계동",
+    "areaMin": 14.29,
+    "areaMax": 122.33,
+    "floorMin": -1,
+    "floorMax": 10
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "신계동",
+    "areaMin": 13.24,
+    "areaMax": 158.26,
+    "floorMin": 1,
+    "floorMax": 25
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "신창동",
+    "areaMin": 12.52,
+    "areaMax": 131.5,
+    "floorMin": -1,
+    "floorMax": 15
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "용문동",
+    "areaMin": 9.97,
+    "areaMax": 149.29,
+    "floorMin": -1,
+    "floorMax": 10
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "용산동2가",
+    "areaMin": 12.39,
+    "areaMax": 148.0,
+    "floorMin": -1,
+    "floorMax": 8
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "용산동3가",
+    "areaMin": 12.24,
+    "areaMax": 21.54,
+    "floorMin": 2,
+    "floorMax": 5
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "원효로1가",
+    "areaMin": 10.63,
+    "areaMax": 149.46,
+    "floorMin": -1,
+    "floorMax": 29
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "원효로2가",
+    "areaMin": 13.22,
+    "areaMax": 100.99,
+    "floorMin": -1,
+    "floorMax": 20
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "원효로3가",
+    "areaMin": 10.0,
+    "areaMax": 93.24,
+    "floorMin": -1,
+    "floorMax": 20
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "원효로4가",
+    "areaMin": 12.64,
+    "areaMax": 244.22,
+    "floorMin": -1,
+    "floorMax": 22
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "청암동",
+    "areaMin": 157.43,
+    "areaMax": 273.02,
+    "floorMin": 1,
+    "floorMax": 15
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "청파동1가",
+    "areaMin": 13.3,
+    "areaMax": 157.5,
+    "floorMin": -1,
+    "floorMax": 6
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "청파동2가",
+    "areaMin": 12.65,
+    "areaMax": 185.16,
+    "floorMin": -1,
+    "floorMax": 6
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "청파동3가",
+    "areaMin": 12.54,
+    "areaMax": 137.46,
+    "floorMin": -1,
+    "floorMax": 15
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "한강로1가",
+    "areaMin": 14.52,
+    "areaMax": 162.04,
+    "floorMin": -1,
+    "floorMax": 7
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "한강로2가",
+    "areaMin": 11.76,
+    "areaMax": 273.97,
+    "floorMin": -1,
+    "floorMax": 39
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "한강로3가",
+    "areaMin": 12.3,
+    "areaMax": 103.57,
+    "floorMin": -1,
+    "floorMax": 26
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "효창동",
+    "areaMin": 12.08,
+    "areaMax": 244.66,
+    "floorMin": -1,
+    "floorMax": 24
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "용산구",
+    "eupmyeon": "",
+    "dong": "후암동",
+    "areaMin": 10.76,
+    "areaMax": 199.25,
+    "floorMin": -1,
+    "floorMax": 7
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "가회동",
+    "areaMin": 47.02,
+    "areaMax": 273.98,
+    "floorMin": -1,
+    "floorMax": 5
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "견지동",
+    "areaMin": 116.03,
+    "areaMax": 149.8,
+    "floorMin": 5,
+    "floorMax": 15
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "경운동",
+    "areaMin": 14.88,
+    "areaMax": 18.18,
+    "floorMin": 2,
+    "floorMax": 7
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "계동",
+    "areaMin": 22.68,
+    "areaMax": 121.62,
+    "floorMin": -1,
+    "floorMax": 4
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "관수동",
+    "areaMin": 12.78,
+    "areaMax": 18.85,
+    "floorMin": 12,
+    "floorMax": 13
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "관철동",
+    "areaMin": 18.19,
+    "areaMax": 150.31,
+    "floorMin": 6,
+    "floorMax": 9
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "교북동",
+    "areaMin": 33.98,
+    "areaMax": 114.99,
+    "floorMin": 1,
+    "floorMax": 19
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "구기동",
+    "areaMin": 19.46,
+    "areaMax": 359.66,
+    "floorMin": -1,
+    "floorMax": 24
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "낙원동",
+    "areaMin": 13.2,
+    "areaMax": 170.12,
+    "floorMin": 2,
+    "floorMax": 15
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "내수동",
+    "areaMin": 56.16,
+    "areaMax": 218.86,
+    "floorMin": 1,
+    "floorMax": 16
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "누상동",
+    "areaMin": 12.78,
+    "areaMax": 106.27,
+    "floorMin": -1,
+    "floorMax": 5
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "누하동",
+    "areaMin": 19.72,
+    "areaMax": 132.0,
+    "floorMin": -1,
+    "floorMax": 5
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "당주동",
+    "areaMin": 65.79,
+    "areaMax": 156.74,
+    "floorMin": 2,
+    "floorMax": 10
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "동숭동",
+    "areaMin": 11.45,
+    "areaMax": 303.8,
+    "floorMin": -1,
+    "floorMax": 6
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "명륜1가",
+    "areaMin": 9.68,
+    "areaMax": 245.16,
+    "floorMin": -1,
+    "floorMax": 12
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "명륜2가",
+    "areaMin": 12.71,
+    "areaMax": 221.13,
+    "floorMin": -1,
+    "floorMax": 20
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "명륜3가",
+    "areaMin": 9.59,
+    "areaMax": 266.98,
+    "floorMin": -1,
+    "floorMax": 7
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "명륜4가",
+    "areaMin": 12.87,
+    "areaMax": 135.49,
+    "floorMin": -1,
+    "floorMax": 5
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "무악동",
+    "areaMin": 27.58,
+    "areaMax": 157.29,
+    "floorMin": -1,
+    "floorMax": 23
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "부암동",
+    "areaMin": 19.06,
+    "areaMax": 250.59,
+    "floorMin": -1,
+    "floorMax": 5
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "사직동",
+    "areaMin": 14.83,
+    "areaMax": 163.33,
+    "floorMin": -1,
+    "floorMax": 14
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "삼청동",
+    "areaMin": 37.3,
+    "areaMax": 238.55,
+    "floorMin": -1,
+    "floorMax": 4
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "수송동",
+    "areaMin": 29.31,
+    "areaMax": 130.98,
+    "floorMin": 5,
+    "floorMax": 18
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "숭인동",
+    "areaMin": 10.97,
+    "areaMax": 125.55,
+    "floorMin": -1,
+    "floorMax": 20
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "신교동",
+    "areaMin": 14.25,
+    "areaMax": 244.42,
+    "floorMin": -1,
+    "floorMax": 6
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "신문로1가",
+    "areaMin": 81.28,
+    "areaMax": 121.32,
+    "floorMin": 8,
+    "floorMax": 10
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "신문로2가",
+    "areaMin": 29.04,
+    "areaMax": 270.46,
+    "floorMin": 1,
+    "floorMax": 18
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "신영동",
+    "areaMin": 24.82,
+    "areaMax": 214.51,
+    "floorMin": -1,
+    "floorMax": 14
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "안국동",
+    "areaMin": 55.04,
+    "areaMax": 79.93,
+    "floorMin": 1,
+    "floorMax": 4
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "연건동",
+    "areaMin": 13.18,
+    "areaMax": 85.07,
+    "floorMin": -1,
+    "floorMax": 13
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "연지동",
+    "areaMin": 13.27,
+    "areaMax": 55.14,
+    "floorMin": 1,
+    "floorMax": 14
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "옥인동",
+    "areaMin": 12.09,
+    "areaMax": 182.84,
+    "floorMin": -1,
+    "floorMax": 6
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "운니동",
+    "areaMin": 12.32,
+    "areaMax": 117.2,
+    "floorMin": 2,
+    "floorMax": 5
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "원남동",
+    "areaMin": 23.14,
+    "areaMax": 27.27,
+    "floorMin": 1,
+    "floorMax": 1
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "원서동",
+    "areaMin": 13.27,
+    "areaMax": 244.59,
+    "floorMin": -1,
+    "floorMax": 4
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "이화동",
+    "areaMin": 12.54,
+    "areaMax": 160.68,
+    "floorMin": 1,
+    "floorMax": 7
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "익선동",
+    "areaMin": 28.1,
+    "areaMax": 100.77,
+    "floorMin": 2,
+    "floorMax": 15
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "인의동",
+    "areaMin": 84.64,
+    "areaMax": 186.17,
+    "floorMin": -1,
+    "floorMax": -1
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "종로6가",
+    "areaMin": 22.92,
+    "areaMax": 29.98,
+    "floorMin": 2,
+    "floorMax": 5
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "창성동",
+    "areaMin": 31.46,
+    "areaMax": 166.54,
+    "floorMin": -1,
+    "floorMax": 4
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "창신동",
+    "areaMin": 10.39,
+    "areaMax": 158.18,
+    "floorMin": -1,
+    "floorMax": 23
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "청운동",
+    "areaMin": 17.17,
+    "areaMax": 270.1,
+    "floorMin": -1,
+    "floorMax": 10
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "체부동",
+    "areaMin": 19.44,
+    "areaMax": 106.33,
+    "floorMin": -1,
+    "floorMax": 5
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "충신동",
+    "areaMin": 16.77,
+    "areaMax": 150.04,
+    "floorMin": -1,
+    "floorMax": 15
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "통의동",
+    "areaMin": 36.34,
+    "areaMax": 82.32,
+    "floorMin": 1,
+    "floorMax": 5
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "통인동",
+    "areaMin": 25.48,
+    "areaMax": 157.27,
+    "floorMin": -1,
+    "floorMax": 5
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "평동",
+    "areaMin": 59.47,
+    "areaMax": 116.94,
+    "floorMin": 1,
+    "floorMax": 20
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "평창동",
+    "areaMin": 15.08,
+    "areaMax": 255.64,
+    "floorMin": -1,
+    "floorMax": 20
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "필운동",
+    "areaMin": 19.18,
+    "areaMax": 241.41,
+    "floorMin": -1,
+    "floorMax": 11
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "행촌동",
+    "areaMin": 11.88,
+    "areaMax": 205.42,
+    "floorMin": -1,
+    "floorMax": 19
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "혜화동",
+    "areaMin": 13.41,
+    "areaMax": 237.78,
+    "floorMin": -1,
+    "floorMax": 7
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "홍지동",
+    "areaMin": 20.56,
+    "areaMax": 244.08,
+    "floorMin": -1,
+    "floorMax": 4
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "홍파동",
+    "areaMin": 37.34,
+    "areaMax": 138.65,
+    "floorMin": -1,
+    "floorMax": 21
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "화동",
+    "areaMin": 105.22,
+    "areaMax": 199.22,
+    "floorMin": 1,
+    "floorMax": 4
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "효자동",
+    "areaMin": 26.28,
+    "areaMax": 194.91,
+    "floorMin": -1,
+    "floorMax": 5
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "종로구",
+    "eupmyeon": "",
+    "dong": "효제동",
+    "areaMin": 14.18,
+    "areaMax": 35.85,
+    "floorMin": 3,
+    "floorMax": 16
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "광희동1가",
+    "areaMin": 14.13,
+    "areaMax": 18.48,
+    "floorMin": 6,
+    "floorMax": 20
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "광희동2가",
+    "areaMin": 12.11,
+    "areaMax": 82.11,
+    "floorMin": -1,
+    "floorMax": 6
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "남대문로5가",
+    "areaMin": 116.11,
+    "areaMax": 206.36,
+    "floorMin": 3,
+    "floorMax": 37
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "남산동2가",
+    "areaMin": 31.94,
+    "areaMax": 128.25,
+    "floorMin": 1,
+    "floorMax": 5
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "남창동",
+    "areaMin": 29.7,
+    "areaMax": 304.82,
+    "floorMin": 1,
+    "floorMax": 7
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "만리동1가",
+    "areaMin": 28.0,
+    "areaMax": 148.62,
+    "floorMin": -1,
+    "floorMax": 15
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "만리동2가",
+    "areaMin": 22.04,
+    "areaMax": 95.96,
+    "floorMin": 1,
+    "floorMax": 25
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "무학동",
+    "areaMin": 11.99,
+    "areaMax": 82.43,
+    "floorMin": 2,
+    "floorMax": 9
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "묵정동",
+    "areaMin": 13.12,
+    "areaMax": 104.92,
+    "floorMin": -1,
+    "floorMax": 10
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "산림동",
+    "areaMin": 66.28,
+    "areaMax": 91.98,
+    "floorMin": 5,
+    "floorMax": 12
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "순화동",
+    "areaMin": 31.76,
+    "areaMax": 117.77,
+    "floorMin": -1,
+    "floorMax": 22
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "신당동",
+    "areaMin": 7.77,
+    "areaMax": 273.82,
+    "floorMin": -1,
+    "floorMax": 23
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "쌍림동",
+    "areaMin": 14.04,
+    "areaMax": 103.12,
+    "floorMin": 1,
+    "floorMax": 4
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "예장동",
+    "areaMin": 17.4,
+    "areaMax": 125.23,
+    "floorMin": -1,
+    "floorMax": 5
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "오장동",
+    "areaMin": 12.26,
+    "areaMax": 41.38,
+    "floorMin": 8,
+    "floorMax": 15
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "을지로5가",
+    "areaMin": 84.65,
+    "areaMax": 84.96,
+    "floorMin": 7,
+    "floorMax": 15
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "을지로6가",
+    "areaMin": 25.43,
+    "areaMax": 28.63,
+    "floorMin": 7,
+    "floorMax": 10
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "인현동2가",
+    "areaMin": 24.55,
+    "areaMax": 135.17,
+    "floorMin": 4,
+    "floorMax": 26
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "입정동",
+    "areaMin": 25.07,
+    "areaMax": 60.0,
+    "floorMin": 4,
+    "floorMax": 27
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "장충동1가",
+    "areaMin": 12.3,
+    "areaMax": 350.56,
+    "floorMin": -1,
+    "floorMax": 10
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "장충동2가",
+    "areaMin": 7.32,
+    "areaMax": 217.4,
+    "floorMin": -1,
+    "floorMax": 10
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "정동",
+    "areaMin": 13.89,
+    "areaMax": 46.26,
+    "floorMin": 1,
+    "floorMax": 9
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "중림동",
+    "areaMin": 10.6,
+    "areaMax": 168.19,
+    "floorMin": -1,
+    "floorMax": 18
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "충무로4가",
+    "areaMin": 71.93,
+    "areaMax": 160.5,
+    "floorMin": -1,
+    "floorMax": 16
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "충무로5가",
+    "areaMin": 19.76,
+    "areaMax": 40.65,
+    "floorMin": 2,
+    "floorMax": 20
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "필동1가",
+    "areaMin": 40.14,
+    "areaMax": 73.4,
+    "floorMin": 7,
+    "floorMax": 14
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "필동2가",
+    "areaMin": 26.09,
+    "areaMax": 171.09,
+    "floorMin": 1,
+    "floorMax": 4
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "필동3가",
+    "areaMin": 10.79,
+    "areaMax": 134.28,
+    "floorMin": -1,
+    "floorMax": 6
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "황학동",
+    "areaMin": 15.01,
+    "areaMax": 229.33,
+    "floorMin": -1,
+    "floorMax": 33
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "회현동1가",
+    "areaMin": 11.86,
+    "areaMax": 139.14,
+    "floorMin": -1,
+    "floorMax": 10
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "회현동2가",
+    "areaMin": 14.12,
+    "areaMax": 254.77,
+    "floorMin": -1,
+    "floorMax": 4
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "회현동3가",
+    "areaMin": 14.99,
+    "areaMax": 16.9,
+    "floorMin": 1,
+    "floorMax": 4
+  },
+  {
+    "sido": "서울특별시",
+    "sigungu": "중구",
+    "eupmyeon": "",
+    "dong": "흥인동",
+    "areaMin": 15.55,
+    "areaMax": 114.57,
+    "floorMin": 2,
+    "floorMax": 22
+  }
+]
