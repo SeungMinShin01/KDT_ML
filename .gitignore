@@ -1,0 +1,34 @@
+# ===== 공통 =====
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+
+# ===== 에디터 =====
+.vscode/
+.idea/
+*.iml
+
+# ===== backend (Spring Boot / Gradle) =====
+backend/.gradle/
+backend/build/
+backend/bin/
+backend/out/
+!backend/gradle/wrapper/gradle-wrapper.jar
+
+# ===== frontend (React / Vite) =====
+frontend/node_modules/
+frontend/dist/
+frontend/*.local
+
+# ===== ai-server (Python / FastAPI) =====
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+*.egg-info/
+
+# ===== 테스트용 =====
+tese.py
