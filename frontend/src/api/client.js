@@ -9,30 +9,31 @@ const api = axios.create({ baseURL: '/api', timeout: 10000 })
 
 /**
  * 3-0. 입력 옵션 파일 (public/data/options.json , 정적 파일이라 백엔드 없이 바로 읽음)
+ * { regions: 시도 → 시군구 → 동 이름 , ranges: 시도별 면적·층 범위 }
  * 처음 한 번만 받아 두고 다시 쓴다. 실패하면 다음 호출 때 다시 시도.
  */
-let optionRows = null
-function loadOptionRows() {
-  if (!optionRows) {
-    optionRows = axios
+let optionData = null
+function loadOptionData() {
+  if (!optionData) {
+    optionData = axios
       .get('/data/options.json')
       .then(({ data }) => data)
       .catch((err) => {
-        optionRows = null
+        optionData = null
         throw err
       })
   }
-  return optionRows
+  return optionData
 }
 
 /** 3-1. 시도 → 시군구 목록 : { regions: { "서울특별시": ["강남구", ...], ... } } */
 export async function getRegions() {
-  return { regions: buildRegions(await loadOptionRows()) }
+  return { regions: buildRegions(await loadOptionData()) }
 }
 
 /** 3-2. 법정동 목록 + 입력 범위 */
 export async function getOptions(sido, sigungu) {
-  return buildOptions(await loadOptionRows(), sido, sigungu)
+  return buildOptions(await loadOptionData(), sido, sigungu)
 }
 
 /**

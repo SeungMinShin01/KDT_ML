@@ -21,7 +21,8 @@ import reactor.core.Disposable;
 @Service
 public class PredictService {
 
-    // 1. FastAPI 주소 , application.properties 의 ai.server.url
+    // 1. FastAPI 예측 주소 (전체 경로) , application.properties 의 ai.server.url
+    // 예) http://127.0.0.1:8000/api/predict
     @Value("${ai.server.url}")
     private String aiServerUrl;
 
@@ -46,9 +47,9 @@ public class PredictService {
         // 3) React 는 농촌 동을 "양평읍 양근리" 처럼 보냄 --> eupmyeon = "양평읍" , dong = "양근리" 로 나눔
         splitEupmyeon(predictDto);
 
-        // 4) WebClient 로 FastAPI 스트리밍 호출 : POST localhost:8000/predict/stream , body = predictDto (JSON)
+        // 4) WebClient 로 FastAPI 스트리밍 호출 : POST 127.0.0.1:8000/api/predict , body = predictDto (JSON)
         Disposable subscription = webClient.post()
-                .uri(aiServerUrl + "/predict/stream")
+                .uri(aiServerUrl)
                 .contentType(MediaType.APPLICATION_JSON)   // 보내는 형식 : JSON
                 .accept(MediaType.TEXT_EVENT_STREAM)       // 받는 형식 : SSE 스트림
                 .bodyValue(predictDto)                     // {"sido", "sigungu", "eupmyeon", "dong", "area", "floor"}

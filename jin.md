@@ -64,7 +64,7 @@ Spring Boot가 중간에서 결과를 받아 React 화면에 **실시간(SSE)** 
 | `model.pkl` | 최종 LightGBM 모델 |
 | `metrics.pkl` | R2, 동별 면적·층 범위 (예측 시 범위 검사용) |
 | `options.json` | 동별 면적·층 범위 목록 → React `frontend/public/data/` 로 복사 |
-| `main.py` | 구동 시 pkl 한 번 로드, 예측 엔드포인트(`POST /predict/stream`) 제공 |
+| `main.py` | 구동 시 pkl 한 번 로드, 예측 엔드포인트(`POST http://127.0.0.1:8000/api/predict`) 제공 |
 ---
 
 ## 4. 개발 환경 (이 컴퓨터 기준)
@@ -127,50 +127,46 @@ JSON 키와 쿼리 파라미터는 **영문 camelCase** 이고, 한글 컬럼명
 **옵션 파일 `options.json` (파이썬 담당이 `train.py` 에서 만들어 전달)**
 
 - 위치: `frontend/public/data/options.json` (React 가 `/data/options.json` 으로 처음 한 번 읽음)
-- 형식: **동 하나당 한 줄인 JSON 배열**, 인코딩 UTF-8
+- 형식: **`regions`(시도 → 시군구 → 동 이름 목록) + `ranges`(시도별 면적·층 범위)**, 인코딩 UTF-8
 
 ```json
-[
-  { "sido": "경기도", "sigungu": "양평군", "eupmyeon": "양평읍", "dong": "양근리",
-    "areaMin": 39.6, "areaMax": 134.8, "floorMin": -1, "floorMax": 25 },
-  { "sido": "서울특별시", "sigungu": "종로구", "eupmyeon": "", "dong": "청운동",
-    "areaMin": 39.6, "areaMax": 187.49, "floorMin": -1, "floorMax": 5 }
-]
+{
+  "regions": {
+    "서울특별시": { "강남구": ["개포동", "논현동", ...], ... },
+    "경기도":     { "가평군": ["가평읍 경반리", "가평읍 금대리", ...], "고양덕양구": [...], ... }
+  },
+  "ranges": {
+    "서울특별시": { "area": [12.5, 207.1], "floor": [1, 41] },
+    "경기도":     { "area": [14.2, 174.9], "floor": [1, 46] }
+  }
+}
 ```
-
-파이썬에서 만드는 방법 (학습에 쓴 데이터 `df` 기준, 층 추출 규칙 적용 후):
-```python
-options = (df.groupby(['시도', '시군구', '읍면', '동리'])
-             .agg(areaMin=('전용면적', 'min'), areaMax=('전용면적', 'max'),
-                  floorMin=('층', 'min'), floorMax=('층', 'max'))
-             .reset_index()
-             .rename(columns={'시도': 'sido', '시군구': 'sigungu', '읍면': 'eupmyeon', '동리': 'dong'}))
-options.to_json('options.json', orient='records', force_ascii=False, indent=2)
-```
-- `읍면` 결측은 빈 문자열 `""` 로 채운 뒤 만듭니다.
-- 지금 들어 있는 파일은 **샘플 CSV(서울 종로·용산·중구, 114개 동)** 로 만든 임시본이므로, 전국 학습이 끝나면 새 파일로 교체합니다.
+- 농촌 동은 읍면을 붙인 이름(`가평읍 경반리`)으로 넣습니다. 예측 요청 때 Spring 이 마지막 공백 기준으로 `eupmyeon`, `dong` 으로 나눕니다.
+- 시군구 이름은 데이터 그대로(`고양덕양구`) 넣으면, 지도 이름(`고양시덕양구`)과는 `frontend/src/utils/region.js` 가 맞춰 줍니다.
+- 현재 파일 : 서울특별시 25개 · 경기도 44개 시군구, 1,492개 동
 
 **React 안에서 바꾸는 모양 (`frontend/src/utils/options.js`)**
 
 | 함수 | 결과 |
 |---|---|
-| `getRegions()` → `buildRegions(rows)` | `{"regions": {"서울특별시": ["용산구", "종로구", "중구"], ...}}` |
-| `getOptions(sido, sigungu)` → `buildOptions(rows, sido, sigungu)` | 아래 예시 |
+| `getRegions()` → `buildRegions(data)` | `{"regions": {"서울특별시": ["강남구", "강동구", ...], ...}}` (시군구 = `regions[시도]` 의 키) |
+| `getOptions(sido, sigungu)` → `buildOptions(data, sido, sigungu)` | 아래 예시 |
 
 ```json
-{ "sido": "경기도", "sigungu": "양평군",
-  "dongs": ["양평읍 양근리", "용문면 다문리"],
-  "areaRange": [30.0, 134.8], "floorRange": [-1, 25], "model": "LightGBM" }
+{ "sido": "경기도", "sigungu": "가평군",
+  "dongs": ["가평읍 경반리", "가평읍 금대리", ...],
+  "areaRange": [14.2, 174.9], "floorRange": [1, 46], "model": "LightGBM" }
 ```
-- 농촌은 `dongs` 에 읍면을 붙인 이름(`양평읍 양근리`)을 넣고, 예측 요청 때 Spring 이 다시 `eupmyeon`, `dong` 으로 나눕니다.
-- `areaRange`, `floorRange` 는 시군구 안 모든 동의 [최소, 최대] 입니다.
+- `areaRange`, `floorRange` 는 **시도 단위** 범위(`ranges[시도]`)입니다.
 
 ### 5-3. Chapter 2 — 예측 (SSE)
 
 | 구간 | 요청 | 응답 |
 |---|---|---|
 | React → Spring Boot | `POST /api/predict` body `{"sido": "경기도", "sigungu": "양평군", "dong": "양평읍 양근리", "area": 84.97, "floor": 3}` | `text/event-stream` |
-| Spring Boot → FastAPI | `POST /predict/stream` body `{"sido": "경기도", "sigungu": "양평군", "eupmyeon": "양평읍", "dong": "양근리", "area": 84.97, "floor": 3}` | `text/event-stream` |
+| Spring Boot → FastAPI | `POST http://127.0.0.1:8000/api/predict` body `{"sido": "경기도", "sigungu": "양평군", "eupmyeon": "양평읍", "dong": "양근리", "area": 84.97, "floor": 3}` | `text/event-stream` |
+
+- Spring 은 `application.properties` 의 `ai.server.url` 값(**전체 주소**)을 그대로 호출합니다. 주소가 바뀌면 이 값만 고치면 됩니다.
 
 - Spring → FastAPI body 는 Spring 이 `dong` 의 읍면을 나눈 뒤 보냅니다. 도시 지역은 `"eupmyeon": ""` 입니다.
 - FastAPI 는 결과를 한 번에 돌려주지 않고 **이벤트를 하나씩 스트리밍**합니다 (`StreamingResponse(media_type="text/event-stream")`).
