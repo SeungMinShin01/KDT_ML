@@ -1,25 +1,39 @@
 import axios from 'axios'
 import * as mock from './mock'
+import { buildOptions, buildRegions } from '../utils/options'
 
 const USE_MOCK = import.meta.env.VITE_USE_MOCK === 'true'
 
 // vite.config.js 의 proxy 가 /api → http://localhost:8080 으로 넘겨준다
 const api = axios.create({ baseURL: '/api', timeout: 10000 })
 
+/**
+ * 3-0. 입력 옵션 파일 (public/data/options.json , 정적 파일이라 백엔드 없이 바로 읽음)
+ * { regions: 시도 → 시군구 → 동 이름 , ranges: 시도별 면적·층 범위 }
+ * 처음 한 번만 받아 두고 다시 쓴다. 실패하면 다음 호출 때 다시 시도.
+ */
+let optionData = null
+function loadOptionData() {
+  if (!optionData) {
+    optionData = axios
+      .get('/data/options.json')
+      .then(({ data }) => data)
+      .catch((err) => {
+        optionData = null
+        throw err
+      })
+  }
+  return optionData
+}
+
 /** 3-1. 시도 → 시군구 목록 : { regions: { "서울특별시": ["강남구", ...], ... } } */
 export async function getRegions() {
-  if (USE_MOCK) return mock.getRegions()
-  const { data } = await api.get('/regions')
-  return data
+  return { regions: buildRegions(await loadOptionData()) }
 }
 
 /** 3-2. 법정동 목록 + 입력 범위 */
 export async function getOptions(sido, sigungu) {
-  if (USE_MOCK) return mock.getOptions(sido, sigungu)
-  const { data } = await api.get(
-    `/options/${encodeURIComponent(sido)}/${encodeURIComponent(sigungu)}`,
-  )
-  return data
+  return buildOptions(await loadOptionData(), sido, sigungu)
 }
 
 /**

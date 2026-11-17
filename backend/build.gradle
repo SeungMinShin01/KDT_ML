@@ -18,7 +18,9 @@ repositories {
 }
 
 dependencies {
-	// WebFlux : WebClient(FastAPI 호출) + SSE 중계 (Netty 논블로킹 서버)
+	// Spring MVC : Controller / Service + SseEmitter(SSE 중계)
+	implementation 'org.springframework.boot:spring-boot-starter-webmvc'
+	// WebClient : FastAPI 호출 (논블로킹)
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	// 입력값 검증 (@NotNull, @Min 등)
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
