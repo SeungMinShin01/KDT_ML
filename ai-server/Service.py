@@ -1,5 +1,6 @@
-# 비지니스 로직 == 머신러닝 모델 예측
 import os
+import json
+import asyncio
 import numpy as np
 import pandas as pd
 import joblib
@@ -50,7 +51,33 @@ class HouseService :
             'r2' : self.metrics[sido]['test_r2'] ,                  # 테스트 R² (원 단위)
             'model' : sido ,
         }
+   # SSE 이벤트 한 개 만들기 :  "data: {json}\n\n"
+    def to_sse( self , data ) :
+        return 'data: ' + json.dumps( data , ensure_ascii=False ) + '\n\n'
 
+    # 예측을 SSE 이벤트로 나눠서 보내기
+    async def predict_stream( self , item ) :
+        # 모델 선택 알림
+        yield self.to_sse( { 'step' : 'model' , 'message' : f"{ item.get('sido') } 모델 선택" } )
+        await asyncio.sleep( 0.3 )
+
+        # 추론 시작 알림
+        yield self.to_sse( { 'step' : 'predict' , 'message' : 'LightGBM 추론 중' } )
+        await asyncio.sleep( 0.3 )
+
+        # 실제 예측 (기존 predict 재사용)
+        result = self.predict( item )
+        if 'error' in result :
+            yield self.to_sse( { 'step' : 'error' , 'message' : result['error'] } )
+            return
+
+        # 결과
+        result['step'] = 'done'
+        yield self.to_sse( result )
+
+
+# 서비스 객체 생성
+house_service = HouseService()
 
 # 서비스 객체 생성
 house_service = HouseService()
